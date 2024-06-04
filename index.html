@@ -536,9 +536,7 @@
                 <textarea class="form-control" name="message" id="message" rows="10" required></textarea>
               </div>
               <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sendmessage">Your message has been sent. Thank you!</div>
+                <div class="sendmessage" style="display: none; background-color: chocolate; color: aliceblue;">Your message has been sent. Thank you!</div>
               </div>
               <div class="text-center"><button type="submit">Send Message</button></div>
             </form>
@@ -580,6 +578,7 @@
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
 
   <!-- Template Main JS File -->
+  <script src="assets/js/jquery.min.js"></script>
   <script src="assets/js/main.js"></script>
   <script type="module">
     import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
