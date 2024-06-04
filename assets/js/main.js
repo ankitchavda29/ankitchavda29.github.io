@@ -5,6 +5,31 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
+
+function getfbConfig() {
+	const firebaseConfig = {
+		apiKey: "AIzaSyAkk2p00f27FoZ6RyAKJfabm4ygkMHA0VU",
+		authDomain: "rajsolankime.firebaseapp.com",
+		databaseURL: "https://rajsolankime-default-rtdb.firebaseio.com",
+		projectId: "rajsolankime",
+		storageBucket: "rajsolankime.appspot.com",
+		messagingSenderId: "300109857777",
+		appId: "1:300109857777:web:e8a7b9e100015856bcfa50",
+		measurementId: "G-VE1EYR40NX"
+	  };
+
+	  return firebaseConfig;
+  }
+
+function generateRandomString() {
+	const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+	let result = "";
+	for (let i = 0; i < 12; i++) {
+		result += chars.charAt(Math.floor(Math.random() * chars.length));
+	}
+	return result;
+}
+
 (function() {
   "use strict";
 
